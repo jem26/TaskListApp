@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task App</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<header><h1>Task Management App</h1></header>
+
+<main>
+	<%= yield %>
+	<div>
+		<%= render 'layouts/sidebar' %>
+	<div>
+</main>
+
+
+<%= render 'layouts/footer' %>
+
+</body>
+</html>
