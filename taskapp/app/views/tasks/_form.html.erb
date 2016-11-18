@@ -32,6 +32,7 @@
     <%= f.check_box :is_completed %>
   </div>
   <div class="field">
+    <%# jarp: When you scaffolded you must ove done 'TaskList:references'. this can work but might cause problems later on. I'd recommend redoing this model %>
     <%= f.label :TaskList_id %><br>
     <%= f.collection_select :TaskList_id, TaskList.all, :id, :name, prompt: true %>
 
