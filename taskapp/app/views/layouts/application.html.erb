@@ -11,8 +11,10 @@
 <header><h1>Task Management App</h1></header>
 
 <main>
-	<%= yield %>
-	<div>
+	<div style="float:left">
+		<%= yield %>
+	</div>
+	<div style="float:left, width:100%">
 		<%= render 'layouts/sidebar' %>
 	<div>
 </main>
