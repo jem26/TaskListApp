@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  get 'login' => 'login#index', as: :login
+
+  post 'login' => 'login#authenticate', as: :authenticate
+
+  get 'logout' => 'login#logout', as: :logout
+
+  get '/' => 'home#index', as: :home
+
+  resources :users
   resources :tasks
   resources :task_lists
   # The priority is based upon order of creation: first created -> highest priority.
@@ -6,7 +15,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-  root 'tasks#index'
+  root 'home#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
