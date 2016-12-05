@@ -16,6 +16,8 @@
   </thead>
 
   <tbody>
+    <%# jarp: it would be better to pass in to instance variables for the two lists
+              instead of calling the scopes from within the view %>
     <% @tasks.pending.each do |task| %>
       <tr>
         <td><%= task.title %></td>
