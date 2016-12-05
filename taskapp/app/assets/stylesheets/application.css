@@ -16,7 +16,7 @@
 
  aside {
  	float:right;
- 	width:33%;
+ 	width:30%;
  	background-color:#c4daff;
  	padding:5px;
  	display:inline-block;
@@ -44,4 +44,13 @@
  th {
  	color: #004ecc;
  }
+
+/* #yield {
+ 	float: left;
+ }
+
+ #sidebar {
+ 	float: left;
+ 	width: 100%;
+ }*/
 

@@ -6,6 +6,7 @@
     <tr>
       <th>Name</th>
       <th>Description</th>
+      <th>Private?</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -15,6 +16,7 @@
       <tr>
         <td><%= task_list.name %></td>
         <td><%= task_list.description %></td>
+        <td><%= task_list.is_private %></td>
         <td><%= link_to 'Show', task_list %></td>
         <td><%= link_to 'Edit', edit_task_list_path(task_list) %></td>
         <td><%= link_to 'Delete', task_list, method: :delete, data: { confirm: 'Are you sure?' } %></td>

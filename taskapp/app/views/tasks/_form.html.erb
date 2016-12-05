@@ -35,7 +35,10 @@
     <%# jarp: When you scaffolded you must ove done 'TaskList:references'. this can work but might cause problems later on. I'd recommend redoing this model %>
     <%= f.label :TaskList_id %><br>
     <%= f.collection_select :TaskList_id, TaskList.all, :id, :name, prompt: true %>
-
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.collection_select :user_id, User.all, :id, :username, prompt: "No users assigned" %>
   </div>
   <div class="actions">
     <%= f.submit %>

@@ -11,8 +11,13 @@
 <header><h1>Task Management App</h1></header>
 
 <main>
-	<%= yield %>
-	<div>
+	<% if flash[:message] %>
+        <p class="flash-message"><%= flash[:message] %></p>
+    <% end %>
+	<div style="float:left">
+		<%= yield %>
+	</div>
+	<div style="float:left, width:100%">
 		<%= render 'layouts/sidebar' %>
 	<div>
 </main>
