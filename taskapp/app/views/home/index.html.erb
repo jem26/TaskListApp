@@ -5,11 +5,5 @@
 	<% @user = User.find_by id: @userID %>
 	<p> Welcome, <%= @user.first_name %>! Here are your tasks:</p>
 
-	<ol>
-		<% @tasks.each do |task| %>
-			<% if task.user_id = @user.id %>
-				<li><%= task.title %></li>
-			<% end %>
-		<% end %>
-	</ol>
+
 <% end %>
