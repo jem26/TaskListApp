@@ -1,5 +1,9 @@
 <h2>Home</h2>
-
+<%#
+	jarp: This should not be done in the view
+	The @@user should be set in the controller (you already have in the before_action filter)
+	and @tasks should be set in the controller as well
+	%>
 <% @userID = session[:user_id] %>
 <% if @userID %>
 	<% @user = User.find_by id: @userID %>
